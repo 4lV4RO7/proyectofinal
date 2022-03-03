@@ -1,0 +1,28 @@
+{
+    "name": "proyectofinal",
+    "version": "1.0.0",
+    "description": "Proyecto final curso de diseño web coderhouse\u001b[D\u001b[D\u001b[D\u001b[ H\u001b[D\u001b[D\u001b[C\u001b[Couse\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DC",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      /*"build-css": "node-sass --include-path scss css/style.scss css/style.css",
+      "watch-css": "nodemon -e scss -x \"npm run build-css\""*/
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/4lV4RO7/proyectofinal.git"
+    },
+    "keywords": [
+      "proyectofinal"
+    ],
+    "author": "4lV4RO7",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/4lV4RO7/proyectofinal/issues"
+    },
+    "homepage": "https://github.com/4lV4RO7/proyectofinal#readme",
+    "devDependencies": {
+      "node-sass": "^4.13.0",
+      "nodemon": "^1.19.4"
+    }
+  }
