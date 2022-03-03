@@ -1,0 +1,264 @@
+html, body {
+	height: 100%;
+}
+
+main {
+	height: 85%;
+
+}
+
+footer {
+	height: 5%;
+	overflow: hidden;
+}
+@font-face {
+	font-family: "Barlow Condensed";
+	src: url("../webfonts/BarlowCondensed-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url("../webfonts/Quicksand-Regular.ttf");
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+video {
+	width: 100%;
+}
+
+header {
+	width: 100%;
+	z-index: 999;
+}
+
+iframe {
+	display: block;
+	height: 100%;
+	width: 100%;
+	border: 0;
+}
+
+.landing,
+.about,
+.prev-photos,
+.about_me,
+.contact {
+	animation-name: example;
+  	animation-duration: 0.5s;
+  	animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.prev-photos {
+	height: 600px;
+}
+
+h1,
+h2 {
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+header nav {
+	min-height: 100px;
+	height: 100%;
+}
+
+.nav-item a {
+	color: #282828;
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+	transition: 0.3s;
+}
+
+.nav-item a:hover {
+	transform: scale(1.05);
+	color: #842982 !important;
+}
+
+h1.landing_contenido_titulo {
+	font-size: 3.5rem;
+}
+
+.contact_button {
+	background-color: #ff6337db;
+	height: 4rem;
+	width: 15rem;
+	border: 0;
+	color: white;
+	font-weight: 700;
+	font-size: 1.3rem;
+	font-family: 'Quicksand', sans-serif;
+	line-height: 50px;
+}
+
+img.about_img {
+	max-height: 90%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.landing {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/mesa5.jpg');
+	background-position: center 80%;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+
+.social-media-buttons-container a {
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+	padding: 3px;
+}
+
+.about>.row,
+.about_me>.row {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+i {
+	transition: 0.2s;
+}
+
+i.fab:hover {
+	font-size: 43px;
+}
+
+footer>.social-media-buttons-container i {
+	color: #002f35;
+}
+
+footer>.social-media-buttons-container i:hover {
+	color: #002f35db;
+}
+
+.about_me_img-container div {
+	background-image: url('../img/florencia.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contact {
+	background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../img/casamiento2.jpg');
+	background-position: center 20%;
+	background-size: cover;
+}
+
+.prev-photos_row_wrapper {
+	height: 100%;
+	flex-grow: 1;
+	overflow: hidden;
+	border: 1px solid white;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.prev-photos_row_wrapper_photo-container {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center 90%;
+	transition: all 0.5s ease;
+}
+
+.prev-photos_row_wrapper_photo-container:hover {
+	transform: scale(1.2);
+}
+
+.about_img-container>.row>div {
+	background-size: cover;
+}
+
+#about_img-container_img1 {
+	background-image: url("../img/mesa8.jpg");
+	background-position: 75% bottom;
+}
+
+#about_img-container_img2 {
+	background-image: url("../img/fiesta6.jpg");
+	background-position: 40% bottom;
+}
+
+#about_img-container_img3 {
+	background-image: url("../img/mesa7.jpg");
+	background-position: 30% bottom;
+}
+
+footer {
+	background-color: #f8f9fa;
+}
+
+.photo-full-container-background,
+.photo-full-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.photo-full-container-background {
+	background-color: black;
+	z-index: 9998;
+	opacity: 0.7;
+}
+
+.photo-full-container {
+	z-index: 9999;
+	color: white;
+}
+
+.hide-photo-full-container {
+	display: none;
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+.jumbotron button {
+	background-color: #ebbb41;
+}
+
+#prevImgButton, #nextImgButton {
+	cursor: pointer;
+}
+
+#prevImgButton:hover, #nextImgButton:hover {
+	color: #ddd;
+}
+
+@media (max-width: 320px) {
+	.navbar-brand img {
+		height: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	i.fa-caret-left, i.fa-caret-right {
+		font-size: 2em;
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		max-height: 15%;
+	}
+}
